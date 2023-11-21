@@ -1,8 +1,7 @@
 import { PUBLIC_DATOCMS_TOKEN } from "$env/static/public";
 
 
-export async function load({ fetch, params }) {
-  const { slug } = params
+export async function load({ fetch}) {
   const response = await fetch('https://graphql.datocms.com', {
     method: 'POST',
     headers: {
@@ -15,7 +14,7 @@ export async function load({ fetch, params }) {
   
   const {data} = await response.json(QUERY);
   
-  return {data} ;
+  return data ;
 };
 
 const QUERY = `

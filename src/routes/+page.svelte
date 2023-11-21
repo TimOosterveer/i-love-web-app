@@ -1,10 +1,9 @@
 <script>
-  export let data
-  console.log(data.allArticles)
+	export let data;
+	import Header from '$lib/components/Header.svelte';
+  import IntroFolder from '$lib/components/Intro_Folders.svelte'
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-{JSON.stringify(data, null, 2)}
+<!-- import here only components -->
+<Header />
+<IntroFolder />

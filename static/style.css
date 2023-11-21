@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&family=Lato:wght@100;300;400;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bg-color: #02021e;
+  --secundair-color: #3727C8;
+  --text-color: #fff;
+	--margin: 4rem;
+}
+
+body {
+	background-color: var(--bg-color);
+	font-family: 'Golos Text', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Mulish', sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
