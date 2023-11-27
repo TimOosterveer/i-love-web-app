@@ -19,6 +19,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@datocms/svelte": "^1.2.0"
+		"@datocms/svelte": "^1.2.0",
+		"@studio-freight/lenis": "^1.0.28"
 	}
 }

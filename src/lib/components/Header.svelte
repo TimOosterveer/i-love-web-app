@@ -19,8 +19,8 @@
     justify-content: center;
 		align-items: center;
 		height: 5rem;
-		border-top: 2px solid white;
-		border-bottom: 2px solid white;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
 		margin: var(--margin);
 	}
 

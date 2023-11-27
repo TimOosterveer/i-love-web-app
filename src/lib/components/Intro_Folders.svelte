@@ -12,6 +12,7 @@
   section {
     display: flex;
     justify-content: space-between;
+    gap: var(--margin);
     margin: var(--margin);
   }
 </style>

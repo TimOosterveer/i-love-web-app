@@ -11,5 +11,12 @@
     background-color: var(--text-color);
     border-radius: 50px;
     border: none;
+    transition: .3s;
   }
+
+  button:hover {
+    background-color: var(--secundair-color);
+    color: var(--text-color);
+  }
+
 </style>

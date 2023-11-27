@@ -28,6 +28,9 @@ query MyQuery {
     image {
       url
     }
+    svg {
+      url
+    }
   }
 }
 `;
