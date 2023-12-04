@@ -3,7 +3,7 @@
   console.log(data)
 </script>
 
-<h1>
-  {data.article.title}
-</h1>
+  <!-- <h1>
+    {data.article.title}
+  </h1> -->
 

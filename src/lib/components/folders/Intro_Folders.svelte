@@ -1,11 +1,12 @@
 <script>
+  export let data
 	import FolderLeft from './Folder_Left.svelte';
 	import FolderRight from './Folder_Right.svelte';
 </script>
 
 <section>
   <FolderLeft />
-  <FolderRight />
+  <FolderRight {data} />
 </section>
 
 <style>

@@ -10,7 +10,7 @@
 				<div class="radius-left-top"></div>
 				<div class="radius-right-top"></div>
 				<span>{article.title}</span>
-        <img src={article.svg.url} alt="">
+				<img src={article.svg.url} alt="" />
 			</div>
 		</a>
 	{/each}
@@ -34,6 +34,9 @@
 		height: 25rem;
 		padding: 6rem 0 0 2rem;
 		margin-bottom: var(--margin);
+		box-shadow:
+			inset 6px -6px 12px #161050,
+			inset -6px 6px 12px #583eff;
 	}
 
 	.folder::before {
@@ -75,17 +78,17 @@
 		position: absolute;
 		top: 2rem;
 		left: 2rem;
-    width: 13rem;
+		width: 13rem;
 	}
 
-  img {
-    position: absolute;
-    width: 50%;
-    inset: 25%;
-    transition: .4s;
-  }
+	img {
+		position: absolute;
+		width: 50%;
+		inset: 25%;
+		transition: 0.4s;
+	}
 
-  img:hover {
-    scale: 1.2;
-  }
+	img:hover {
+		scale: 1.2;
+	}
 </style>
