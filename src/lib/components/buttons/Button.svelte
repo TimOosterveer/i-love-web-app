@@ -10,7 +10,7 @@
     width: 10rem;
     height: 2.5rem;
     background-color: var(--text-color);
-    color: var(--bg-color);
+    color: var(--text-color-light);
     border-radius: 50px;
     border: none;
     text-decoration: none;
@@ -19,7 +19,7 @@
 
   a:hover {
     background-color: var(--secundair-color);
-    color: var(--text-color);
+    color: var(--text-color-light);
   }
 
 </style>

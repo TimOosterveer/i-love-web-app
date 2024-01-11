@@ -21,6 +21,7 @@ const QUERY = `
 query MyQuery {
   allArticles {
     id
+    build
     slug
     title
     introtext

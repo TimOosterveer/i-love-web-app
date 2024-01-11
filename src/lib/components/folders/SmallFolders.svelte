@@ -1,42 +1,51 @@
 <script>
 	export let data;
 	console.log(data.allArticles);
+
+	import { onMount } from 'svelte';
+
+	// onMount(() => {
+
+	// });
+		
+
 </script>
 
 <div class="container-folders">
 	{#each data.allArticles as article}
-		<a href={article.slug}>
-			<div class="folder">
-				<div class="radius-left-top"></div>
-				<div class="radius-right-top"></div>
+		<div id="folder" class="folder">
+			<div class="radius-left-top"></div>
+			<div class="radius-right-top"></div>
 				<span>{article.title}</span>
 				<img src={article.svg.url} alt="" />
-			</div>
-		</a>
+				<a href={article.slug} />
+		</div>
 	{/each}
 </div>
 
 <style>
 	.container-folders {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 		margin: var(--margin) var(--margin) 0 var(--margin);
+		gap: 4rem;
 	}
 
 	/* Inverted border-radius */
 	.folder {
 		position: relative;
 		background-color: var(--secundair-color);
-		color: var(--text-color);
+		color: var(--text-color-light);
 		border-radius: 25px;
-		width: 30rem;
-		height: 25rem;
+		width: 100%;
+		height: 30rem;
 		padding: 6rem 0 0 2rem;
 		margin-bottom: var(--margin);
 		box-shadow:
 			inset 6px -6px 12px #161050,
 			inset -6px 6px 12px #583eff;
+		overflow: hidden;
 	}
 
 	.folder::before {
@@ -74,6 +83,11 @@
 
 	/* styling folders*/
 
+	a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
 	span {
 		position: absolute;
 		top: 2rem;
@@ -83,12 +97,24 @@
 
 	img {
 		position: absolute;
-		width: 50%;
-		inset: 25%;
+		top: 25%;
+		left: 30%;
+		width: 40%;
 		transition: 0.4s;
 	}
 
 	img:hover {
-		scale: 1.2;
+		scale: 1.9;
 	}
+
+	/* @media screen and (max-width: 1400px) {
+
+		.container-folders {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			width: 100%;
+
+		}
+	} */
 </style>

@@ -22,12 +22,13 @@
 
 		requestAnimationFrame(raf);
 	});
+
 </script>
 
 <!-- import here only components -->
 <Header />
 <IntroFolder {data} />
-<FilterOption />
+<FilterOption {data}/>
 <MiniFolders {data} />
 
 

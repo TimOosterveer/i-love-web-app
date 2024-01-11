@@ -3,14 +3,13 @@
 </script>
 
 <section class="folder">
-	<h2>USEFUL ARTICLES</h2>
 	<div class="radius-left-top"></div>
 	<div class="radius-right-top"></div>
 	<span><i class="fa-solid fa-thumbtack fa-spin"></i>RECENT POST</span>
 
-	<div class="last-article">
-		<p>{data.allArticles[0].title}</p>
-	</div>
+	<!-- <div class="last-article">
+		<p>{data.allArticles[1].title}</p>
+	</div> -->
 
 </section>
 
@@ -27,14 +26,8 @@
 			inset -6px 6px 12px #583eff;
 	}
 
-	h2 {
-		color: var(--text-color);
-		font-size: 4rem;
-		line-height: 1;
-	}
-
 	span {
-		color: var(--text-color);
+		color: var(--text-color-light);
 		position: absolute;
 		top: 2rem;
 	}
@@ -75,5 +68,9 @@
 		height: 30px;
 		border-top-right-radius: 25px;
 		box-shadow: 10px -7px 0 6px var(--bg-color);
+	}
+
+	.last-article {
+		color: var(--text-color-light);
 	}
 </style>

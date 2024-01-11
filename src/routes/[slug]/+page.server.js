@@ -19,9 +19,11 @@ export async function load({ fetch, params }) {
 
 const QUERY = `query article($slug: String) {
   article(filter: {slug: {eq: $slug}}) {
-    title,
-		introtext,
-		story,
+    title
+		introtext
+		date
+		slug
+		story
 		image {
       url
     }

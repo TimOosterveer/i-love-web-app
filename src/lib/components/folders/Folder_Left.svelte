@@ -1,12 +1,11 @@
 <script>
-	import Heart from '$lib/assets/heart.svg';
 </script>
 
 <section class="folder">
-	<h1>We Love Web App</h1>
-	<img src={Heart} alt="" />
+	<h1>WE LOVE WEB APP</h1>
 	<div class="radius-left-top"></div>
 	<div class="radius-right-top"></div>
+
 </section>
 
 <style>
@@ -21,36 +20,11 @@
 	}
 
 	h1 {
-		color: var(--text-color);
-		font-size: 5rem;
+		color: var(--text-color-light);
+		font-size: 8rem;
+		font-weight: 300;
 		text-align: left;
 		line-height: 1;
-	}
-
-	img {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-    animation: heart infinite 3s;
-	}
-
-	@keyframes heart {
-		25% {
-			transform: scale(1.1);
-      fill: red;
-		}
-
-		50% {
-			transform: scale(1);
-		}
-
-		75% {
-			transform: scale(1.1);
-		}
-
-    100% {
-      transform: scale(1);
-    }
 	}
 
 	/* inverted border-radius */
