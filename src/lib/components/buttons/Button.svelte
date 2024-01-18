@@ -9,8 +9,8 @@
     right: 0;
     width: 10rem;
     height: 2.5rem;
-    background-color: var(--text-color);
-    color: var(--text-color-light);
+    background-color: var(--text-color-light);
+    color: var(--text-color-dark);
     border-radius: 50px;
     border: none;
     text-decoration: none;

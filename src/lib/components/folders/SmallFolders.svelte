@@ -13,13 +13,13 @@
 
 <div class="container-folders">
 	{#each data.allArticles as article}
-		<div id="folder" class="folder">
+	<div id="folder" class="folder">
+			<a href={article.slug} />
 			<div class="radius-left-top"></div>
 			<div class="radius-right-top"></div>
 				<span>{article.title}</span>
 				<img src={article.svg.url} alt="" />
-				<a href={article.slug} />
-		</div>
+			</div>
 	{/each}
 </div>
 
@@ -103,8 +103,8 @@
 		transition: 0.4s;
 	}
 
-	img:hover {
-		scale: 1.9;
+	.folder:hover img {
+		scale: 1.1;
 	}
 
 	/* @media screen and (max-width: 1400px) {
